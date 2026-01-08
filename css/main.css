@@ -1,14 +1,39 @@
 
-/* Colors: #0B0B0B  #F64D00  #E4E4E4 */
+/* Colors: #0B0B0B  #F64D00  #E4E4E4  #00eaff*/
 .mainBody {
     font-family: 'Courier New', Courier, monospace;
-    background-color: #0B0B0B;
-    color: #F64D00;
+    background-color: #000000;
+    color: #00eaff;
     margin: 0 auto;
-    border: 3px solid #E4E4E4;
     padding: 20px;
+    text-align: center;
+}
+    .page {
+    max-width: 1000px;
+    margin: 0 auto;
     text-align: left;
-    height: 900px;
+    }
+    .mainLayout {
+        display: flex;
+        gap: 30px;
+        align-items: flex-start;
+    }
+        @media (max-width: 900px) {
+            .mainLayout {
+                flex-direction: column;
+            }
+
+            aside {
+                width: 100%;
+            }
+        }
+
+
+
+
+img {
+    display: block;
+    margin: 30px auto;
 }
 
 
@@ -35,3 +60,39 @@
             text-align: center;
             padding: 5px;
         }
+
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    flex: 1;
+}
+
+    @media (max-width: 900px) {
+        .content {
+            grid-template-columns: 1fr;
+        }
+    }
+    .contentBox {
+        border: 2px solid #E4E4E4;
+        padding: 15px;
+        background-color: #0B0B0B;
+    }
+        .contentBox h2 {
+            margin-top: 0;
+        }
+        
+    .mainLayout {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    padding-top: 40px;
+    }
+
+
+
+aside {
+    width: 250px;
+}
+
