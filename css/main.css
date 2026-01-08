@@ -29,14 +29,6 @@
         }
 
 
-
-
-img {
-    display: block;
-    margin: 30px auto;
-}
-
-
 .mainHeader {
     text-align: center;
 }
@@ -91,7 +83,15 @@ img {
     padding-top: 40px;
     }
 
-
+.figBox {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px; 
+    padding: 15px;
+    margin: 0 auto;
+    max-width: 100%;
+}
 
 aside {
     width: 250px;
