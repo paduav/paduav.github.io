@@ -97,3 +97,15 @@ aside {
     width: 250px;
 }
 
+
+
+a {
+    color: #00eaff;
+    text-decoration: none;
+}
+    a:hover {
+    box-shadow: 0 0 10px #00eaff;
+    }
+    figure a {
+        display: inline-block;
+    }
